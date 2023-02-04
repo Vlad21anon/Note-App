@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_add_notes_style"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_small">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:text="@string/chose_type_dialog_text"/>
+
+    <LinearLayout style="@style/dialog_ll_item"
+        android:id="@+id/btn_type_note">
+
+        <TextView style="@style/dialog_text_item"
+            android:text="Create note"/>
+
+        <ImageView style="@style/dialog_image_item"
+            android:src="@drawable/add_note_24" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/dialog_ll_item"
+        android:id="@+id/btn_type_audio">
+
+        <TextView style="@style/dialog_text_item"
+            android:text="Create audio"/>
+
+        <ImageView style="@style/dialog_image_item"
+            android:src="@drawable/audio_24" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/dialog_ll_item"
+        android:id="@+id/tv_type_photo">
+
+        <TextView style="@style/dialog_text_item"
+            android:text="Create photo"/>
+
+        <ImageView style="@style/dialog_image_item"
+            android:src="@drawable/add_photo_24" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/dialog_ll_item"
+        android:id="@+id/tv_type_list">
+
+        <TextView style="@style/dialog_text_item"
+            android:text="Create list"/>
+
+        <ImageView style="@style/dialog_image_item"
+            android:src="@drawable/checklist_24" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/dialog_ll_item"
+        android:id="@+id/tv_type_draw">
+
+        <TextView style="@style/dialog_text_item"
+            android:text="Create draw"/>
+
+        <ImageView style="@style/dialog_image_item"
+            android:src="@drawable/draw_24" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/dialog_ll_item"
+        android:id="@+id/tv_type_load_file">
+
+        <TextView style="@style/dialog_text_item"
+            android:text="Load file"/>
+
+        <ImageView style="@style/dialog_image_item"
+            android:src="@drawable/download_24" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/dialog_ll_item"
+        android:id="@+id/tv_type_link">
+
+        <TextView style="@style/dialog_text_item"
+            android:text="Create link"/>
+
+        <ImageView style="@style/dialog_image_item"
+            android:src="@drawable/add_link_24" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/dialog_ll_item"
+        android:id="@+id/tv_type_folder">
+
+        <TextView
+            style="@style/dialog_text_item"
+            android:text="@string/create_folder_text" />
+
+        <ImageView
+            style="@style/dialog_image_item"
+            android:src="@drawable/create_new_folder_24" />
+
+    </LinearLayout>
+
+</LinearLayout>
