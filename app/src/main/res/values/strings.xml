@@ -9,4 +9,11 @@
     <string name="help_me">Help me</string>
     <string name="trash">Trash</string>
     <string name="buy">Subscribe</string>
+    <string name="sorting_type_string">Chose sorting type</string>
+    <string name="sort_by_names">Sort by names</string>
+    <string name="by_ascending">By ascending</string>
+    <string name="by_descending">By descending</string>
+    <string name="sort_by_data_changed">Sort by data changed</string>
+    <string name="sort_by_data_created">Sort by data created</string>
+    <string name="sort_by_move">Sort by move</string>
 </resources>

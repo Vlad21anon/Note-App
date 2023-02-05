@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/itemSortByName"
+            android:title="@string/sort_by_names"/>
+        <item
+            android:id="@+id/itemSortByDataChanged"
+            android:title="@string/sort_by_data_changed"/>
+        <item
+            android:id="@+id/itemSortByDataCreated"
+            android:title="@string/sort_by_data_created" />
+        <item
+            android:id="@+id/itemSortByMove"
+            android:title="@string/sort_by_move" />
+    </group>
+
+
+</menu>
