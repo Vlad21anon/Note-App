@@ -15,8 +15,8 @@
         android:background="@color/grey_50">
 
         <include
-            android:id="@+id/toolbar"
-            layout="@layout/main_toolbar"/>
+            android:id="@+id/toolbarMain"
+            layout="@layout/toolbar_main"/>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
@@ -29,14 +29,17 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvListNotesItems"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
             <ImageView
                 android:id="@+id/ivAddNoteItem"
@@ -53,14 +56,45 @@
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/moreNavigationView"
+
+        app:itemIconTint="@color/grey_175"
+        app:itemTextColor="@color/grey_175"
         android:background="@color/grey_60"
-        android:layout_gravity="start"
+
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        app:menu="@menu/navigation_drawer"
-        app:headerLayout="@layout/header_navigation_drawer"
 
-        android:visibility="visible"/>
+        app:menu="@menu/navigation_drawer"
+        app:headerLayout="@layout/navigation_drawer_header_main"
+
+        android:layout_gravity="start"
+        tools:visibility="gone"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/clBottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/sortNavigationView"
+
+            app:itemIconTint="@color/grey_175"
+            app:itemTextColor="@color/grey_175"
+            android:background="@color/grey_60"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/navigation_drawer_sort"
+            app:layout_behavior="@string/bottom_sheet_behavior"
+            app:headerLayout="@layout/navigation_drawer_header_sort"
+
+            app:behavior_hideable="true"
+            tools:visibility="visible"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
 
