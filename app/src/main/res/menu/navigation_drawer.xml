@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+    android:id="@+id/group1"
+    android:checkableBehavior="single">
+        <item
+            android:id="@+id/itemAllFolders"
+            android:icon="@drawable/folder_24"
+            android:title="@string/folders"/>
+        <item
+            android:id="@+id/itemSavedNotes"
+            android:icon="@drawable/saved_24"
+            android:title="@string/saved_text"/>
+        <item
+            android:id="@+id/itemTrashNotes"
+            android:icon="@drawable/trash_24"
+            android:title="@string/trash" />
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item4"
+            android:icon="@drawable/settings_24"
+            android:title="@string/settings" />
+
+        <item
+            android:id="@+id/item5"
+            android:icon="@drawable/question_mark_24"
+            android:title="@string/help_me" />
+
+    </group>
+
+</menu>
