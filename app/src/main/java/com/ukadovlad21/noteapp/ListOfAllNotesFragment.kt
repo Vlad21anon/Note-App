@@ -5,13 +5,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
+import com.ukadovlad21.noteapp.databinding.FragmentListOfAllNotesBinding
 
 class ListOfAllNotesFragment : Fragment() {
+    private lateinit var binding: FragmentListOfAllNotesBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        return inflater.inflate(R.layout.fragment_list_of_all_notes, container, false)
+        binding = FragmentListOfAllNotesBinding.inflate(layoutInflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+        binding.toolbar.ivSearch.setOnClickListener {
+        }
+
     }
 
 }
