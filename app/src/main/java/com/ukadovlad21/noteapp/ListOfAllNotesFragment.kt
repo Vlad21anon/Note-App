@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.ukadovlad21.noteapp.databinding.FragmentListOfAllNotesBinding
 
 class ListOfAllNotesFragment : Fragment() {
@@ -21,8 +22,11 @@ class ListOfAllNotesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.toolbarMain.ibSort.setOnClickListener {
+            val dialog = BottomSheetDialog(requireContext())
+            dialog.setContentView(R.layout.dialog_sort_notes)
 
-        binding.toolbar.ivSearch.setOnClickListener {
+            dialog.show()
         }
 
     }
