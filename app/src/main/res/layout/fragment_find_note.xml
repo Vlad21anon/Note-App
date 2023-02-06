@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/grey_50">
 
-    <include layout="@layout/find_toolbar"/>
+    <include layout="@layout/toolbar_find"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:padding="@dimen/padding_small"

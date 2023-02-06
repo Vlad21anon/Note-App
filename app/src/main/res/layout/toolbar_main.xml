@@ -7,7 +7,7 @@
 
     <ImageButton
         android:background="?selectableItemBackground"
-        android:id="@+id/ivList"
+        android:id="@+id/ibMore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/menu_36"
@@ -24,7 +24,7 @@
 
     <ImageButton
         android:background="?selectableItemBackground"
-        android:id="@+id/ivSort"
+        android:id="@+id/ibSort"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/sort_36"
@@ -33,7 +33,7 @@
 
     <ImageButton
         android:background="?selectableItemBackground"
-        android:id="@+id/ivSearch"
+        android:id="@+id/ibSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/search_36"

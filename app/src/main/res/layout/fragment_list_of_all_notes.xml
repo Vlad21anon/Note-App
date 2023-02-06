@@ -15,8 +15,8 @@
         android:background="@color/grey_50">
 
         <include
-            android:id="@+id/toolbar"
-            layout="@layout/main_toolbar"/>
+            android:id="@+id/toolbarMain"
+            layout="@layout/toolbar_main"/>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
@@ -58,9 +58,9 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:menu="@menu/navigation_drawer"
-        app:headerLayout="@layout/header_navigation_drawer"
+        app:headerLayout="@layout/navigation_drawer_header"
 
-        android:visibility="visible"/>
+        android:visibility="gone"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
 
