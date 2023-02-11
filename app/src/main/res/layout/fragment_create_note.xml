@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_60"
+    android:orientation="vertical">
+
+    <include android:id="@+id/toolbarCreateNote"
+        layout="@layout/toolbar_title"/>
+    <LinearLayout
+        android:id="@+id/llCreateNoteInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tvDataNoteCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_150"
+            android:text="dd:mm:yyyy"
+            android:layout_marginEnd="@dimen/margin_small"/>
+        <TextView
+            android:id="@+id/tvTimeNoteCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_150"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:text="hh:mm"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etNoteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+</LinearLayout>
