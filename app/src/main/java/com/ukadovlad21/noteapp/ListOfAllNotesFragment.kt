@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.ukadovlad21.noteapp.databinding.FragmentListOfAllNotesBinding
 
@@ -35,7 +36,7 @@ class ListOfAllNotesFragment : Fragment() {
         }
 
         binding.toolbarMain.ibSearch.setOnClickListener {
-            (activity as MainActivity).navController.navigate(R.id.action_listOfAllNotesFragment_to_findNoteFragment)
+            findNavController().navigate(R.id.action_listOfAllNotesFragment_to_findNoteFragment)
         }
 
         binding.toolbarMain.ibMore.setOnClickListener {
@@ -43,12 +44,12 @@ class ListOfAllNotesFragment : Fragment() {
         }
 
         binding.toolbarMain.ibSort.setOnClickListener {
-            dialogSetup(requireContext())
+            dialogSortNotesSetup()
         }
     }
 
-    private fun dialogSetup(context: Context) {
-        val dialog = BottomSheetDialog(context)
+    private fun dialogSortNotesSetup() {
+        val dialog = BottomSheetDialog(requireContext())
         dialog.setContentView(R.layout.dialog_sort_notes)
         dialog.show()
     }

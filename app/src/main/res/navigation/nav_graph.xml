@@ -10,9 +10,16 @@
         <action
             android:id="@+id/action_listOfAllNotesFragment_to_findNoteFragment"
             app:destination="@id/findNoteFragment" />
+        <action
+            android:id="@+id/action_listOfAllNotesFragment_to_fragmentCreateNote"
+            app:destination="@id/fragmentCreateNote" />
     </fragment>
     <fragment
         android:id="@+id/findNoteFragment"
         android:name="com.ukadovlad21.noteapp.FindNoteFragment"
         android:label="FindNoteFragment" />
+    <fragment
+        android:id="@+id/fragmentCreateNote"
+        android:name="com.ukadovlad21.noteapp.FragmentCreateNote"
+        android:label="FragmentCreateNote" />
 </navigation>
