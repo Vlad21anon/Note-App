@@ -11,6 +11,7 @@
         android:textAlignment="center"
         android:textSize="36sp"
         android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/margin_small"
         android:text="@string/chose_type_dialog_text"/>
 
     <LinearLayout style="@style/dialog_ll_item"
@@ -21,28 +22,6 @@
 
         <ImageView style="@style/dialog_image_item"
             android:src="@drawable/add_note_24" />
-
-    </LinearLayout>
-
-    <LinearLayout style="@style/dialog_ll_item"
-        android:id="@+id/ll_type_audio">
-
-        <TextView style="@style/dialog_text_item"
-            android:text="Create audio"/>
-
-        <ImageView style="@style/dialog_image_item"
-            android:src="@drawable/audio_24" />
-
-    </LinearLayout>
-
-    <LinearLayout style="@style/dialog_ll_item"
-        android:id="@+id/ll_type_photo">
-
-        <TextView style="@style/dialog_text_item"
-            android:text="Create photo"/>
-
-        <ImageView style="@style/dialog_image_item"
-            android:src="@drawable/add_photo_24" />
 
     </LinearLayout>
 
@@ -58,28 +37,6 @@
     </LinearLayout>
 
     <LinearLayout style="@style/dialog_ll_item"
-        android:id="@+id/ll_type_draw">
-
-        <TextView style="@style/dialog_text_item"
-            android:text="Create draw"/>
-
-        <ImageView style="@style/dialog_image_item"
-            android:src="@drawable/draw_24" />
-
-    </LinearLayout>
-
-    <LinearLayout style="@style/dialog_ll_item"
-        android:id="@+id/ll_type_load_file">
-
-        <TextView style="@style/dialog_text_item"
-            android:text="Load file"/>
-
-        <ImageView style="@style/dialog_image_item"
-            android:src="@drawable/download_24" />
-
-    </LinearLayout>
-
-    <LinearLayout style="@style/dialog_ll_item"
         android:id="@+id/ll_type_link">
 
         <TextView style="@style/dialog_text_item"
@@ -91,15 +48,46 @@
     </LinearLayout>
 
     <LinearLayout style="@style/dialog_ll_item"
-        android:id="@+id/ll_type_folder">
+        android:id="@+id/ll_type_draw">
 
-        <TextView
-            style="@style/dialog_text_item"
-            android:text="@string/create_folder_text" />
+        <TextView style="@style/dialog_text_item"
+            android:text="Create draw"/>
 
-        <ImageView
-            style="@style/dialog_image_item"
-            android:src="@drawable/create_new_folder_24" />
+        <ImageView style="@style/dialog_image_item"
+            android:src="@drawable/draw_24" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/dialog_ll_item"
+        android:id="@+id/ll_type_photo">
+
+        <TextView style="@style/dialog_text_item"
+            android:text="Create photo"/>
+
+        <ImageView style="@style/dialog_image_item"
+            android:src="@drawable/add_photo_24" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/dialog_ll_item"
+        android:id="@+id/ll_type_audio">
+
+        <TextView style="@style/dialog_text_item"
+            android:text="Create audio"/>
+
+        <ImageView style="@style/dialog_image_item"
+            android:src="@drawable/audio_24" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/dialog_ll_item"
+        android:id="@+id/ll_type_load_file">
+
+        <TextView style="@style/dialog_text_item"
+            android:text="Load file"/>
+
+        <ImageView style="@style/dialog_image_item"
+            android:src="@drawable/download_24" />
 
     </LinearLayout>
 

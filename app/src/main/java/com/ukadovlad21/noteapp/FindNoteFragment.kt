@@ -23,9 +23,31 @@ class FindNoteFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setupTabLayout()
+
         makeFocusOnEditText(requireContext(), binding.toolbarFind.tietSearch)
 
     }
+
+    private fun setupTabLayout() {
+        val adapter = ViewPagerAdapter(parentFragmentManager)
+        addFragmentToViewPagerAdapter(adapter)
+        binding.tabLayout.setupWithViewPager(binding.viewPager)
+        binding.viewPager.adapter = adapter
+    }
+
+    private fun addFragmentToViewPagerAdapter(adapter: ViewPagerAdapter) {
+        adapter.addFragment(Fragment(), "ALL")
+        adapter.addFragment(Fragment(), "Notes")
+        adapter.addFragment(Fragment(), "Lists")
+        adapter.addFragment(Fragment(), "Links")
+        adapter.addFragment(Fragment(), "Draws")
+        adapter.addFragment(Fragment(), "Photos")
+        adapter.addFragment(Fragment(), "Audios")
+        adapter.addFragment(Fragment(), "Files")
+
+    }
+
 
     private fun makeFocusOnEditText(context: Context, editText: EditText) {
         editText.requestFocus()
