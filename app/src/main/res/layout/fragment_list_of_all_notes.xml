@@ -38,14 +38,15 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/ivAddNoteItem"
+            <ImageButton
+                android:id="@+id/ibCreateNoteItem"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_margin="@dimen/margin_normal"
+                android:background="?selectableItemBackground"
                 android:src="@drawable/add_circle_48"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -59,8 +60,7 @@
         android:layout_height="match_parent"
         app:menu="@menu/navigation_drawer"
         app:headerLayout="@layout/navigation_drawer_header"
-
-        android:visibility="gone"/>
+        tools:visibility="gone"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
 

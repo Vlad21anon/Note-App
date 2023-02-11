@@ -6,8 +6,8 @@
     android:background="@drawable/toolbar_style">
 
     <ImageButton
-        android:background="?selectableItemBackground"
         android:id="@+id/ibMore"
+        android:background="?selectableItemBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/menu_36"
