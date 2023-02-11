@@ -1,6 +1,5 @@
 package com.ukadovlad21.noteapp
 
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -26,6 +25,26 @@ class ListOfAllNotesFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setupClickListeners()
+
+        setupTabLayout()
+    }
+
+    private fun setupTabLayout() {
+        val adapter = ViewPagerAdapter(parentFragmentManager)
+        addFragmentToViewPagerAdapter(adapter)
+        binding.tabLayout.setupWithViewPager(binding.viewPager)
+        binding.viewPager.adapter = adapter
+    }
+
+    private fun addFragmentToViewPagerAdapter(adapter: ViewPagerAdapter) {
+        adapter.addFragment(Fragment(), "ALL")
+        adapter.addFragment(Fragment(), "Notes")
+        adapter.addFragment(Fragment(), "Lists")
+        adapter.addFragment(Fragment(), "Links")
+        adapter.addFragment(Fragment(), "Draws")
+        adapter.addFragment(Fragment(), "Photos")
+        adapter.addFragment(Fragment(), "Audios")
+        adapter.addFragment(Fragment(), "Files")
 
     }
 
