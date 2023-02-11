@@ -2,9 +2,17 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph.xml"
-    app:startDestination="@id/listOfAllNotesFragment2">
+    app:startDestination="@id/listOfAllNotesFragment">
     <fragment
-        android:id="@+id/listOfAllNotesFragment2"
+        android:id="@+id/listOfAllNotesFragment"
         android:name="com.ukadovlad21.noteapp.ListOfAllNotesFragment"
-        android:label="ListOfAllNotesFragment" />
+        android:label="ListOfAllNotesFragment" >
+        <action
+            android:id="@+id/action_listOfAllNotesFragment_to_findNoteFragment"
+            app:destination="@id/findNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/findNoteFragment"
+        android:name="com.ukadovlad21.noteapp.FindNoteFragment"
+        android:label="FindNoteFragment" />
 </navigation>
