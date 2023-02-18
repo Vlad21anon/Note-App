@@ -20,6 +20,7 @@
         <EditText
             android:id="@+id/etTitle"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:layout_gravity="center_vertical"
             android:background="@color/white"
             android:layout_width="0dp"
@@ -31,7 +32,7 @@
             android:layout_marginEnd="@dimen/margin_big"/>
 
         <ImageButton
-            android:id="@+id/ibShareNote"
+            android:id="@+id/ibShare"
             android:background="?selectableItemBackground"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,7 +40,7 @@
             android:layout_gravity="center"/>
 
         <ImageButton
-            android:id="@+id/ibMoreNoteCreate"
+            android:id="@+id/ibMore"
             android:background="?selectableItemBackground"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
