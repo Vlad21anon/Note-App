@@ -39,6 +39,12 @@
             android:layout_weight="1"/>
 
     </LinearLayout>
+    <ImageView
+        android:id="@+id/ivLoadedImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ImageView>
 
 
 </LinearLayout>
