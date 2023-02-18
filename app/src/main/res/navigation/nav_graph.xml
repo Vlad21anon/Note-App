@@ -13,13 +13,32 @@
         <action
             android:id="@+id/action_listOfAllNotesFragment_to_fragmentCreateNote"
             app:destination="@id/fragmentCreateNote" />
+        <action
+            android:id="@+id/action_listOfAllNotesFragment_to_createLinkFragment"
+            app:destination="@id/createLinkFragment" />
     </fragment>
     <fragment
         android:id="@+id/findNoteFragment"
         android:name="com.ukadovlad21.noteapp.FindNoteFragment"
-        android:label="FindNoteFragment" />
+        android:label="FindNoteFragment" >
+        <action
+            android:id="@+id/action_findNoteFragment_to_listOfAllNotesFragment"
+            app:destination="@id/listOfAllNotesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentCreateNote"
-        android:name="com.ukadovlad21.noteapp.FragmentCreateNote"
-        android:label="FragmentCreateNote" />
+        android:name="com.ukadovlad21.noteapp.CreateNoteFragment"
+        android:label="FragmentCreateNote" >
+        <action
+            android:id="@+id/action_fragmentCreateNote_to_listOfAllNotesFragment"
+            app:destination="@id/listOfAllNotesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createLinkFragment"
+        android:name="com.ukadovlad21.noteapp.CreateLinkFragment"
+        android:label="CreateLinkFragment" >
+        <action
+            android:id="@+id/action_createLinkFragment_to_listOfAllNotesFragment"
+            app:destination="@id/listOfAllNotesFragment" />
+    </fragment>
 </navigation>

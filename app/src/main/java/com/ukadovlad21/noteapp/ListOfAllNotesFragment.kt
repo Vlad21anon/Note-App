@@ -43,7 +43,7 @@ class ListOfAllNotesFragment : Fragment() {
         adapter.addFragment(Fragment(), "Links")
         adapter.addFragment(Fragment(), "Draws")
         adapter.addFragment(Fragment(), "Photos")
-        adapter.addFragment(Fragment(), "Audios")
+        adapter.addFragment(Fragment(), "Audio")
         adapter.addFragment(Fragment(), "Files")
 
     }
