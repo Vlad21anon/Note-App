@@ -34,5 +34,9 @@ class CreateNoteDialog : DialogFragment() {
             dialog?.dismiss()
             findNavController().navigate(R.id.action_listOfAllNotesFragment_to_fragmentCreateNote)
         }
+        binding.llTypeLink.setOnClickListener {
+            dialog?.dismiss()
+            findNavController().navigate(R.id.action_listOfAllNotesFragment_to_createLinkFragment)
+        }
     }
 }
