@@ -1,4 +1,4 @@
-package com.ukadovlad21.noteapp.ui.fragments.create_items
+package com.ukadovlad21.noteapp.ui.dialogs
 
 import android.app.AlertDialog
 import android.app.Dialog
