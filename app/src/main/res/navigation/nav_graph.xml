@@ -5,7 +5,7 @@
     app:startDestination="@id/listOfAllNotesFragment">
     <fragment
         android:id="@+id/listOfAllNotesFragment"
-        android:name="com.ukadovlad21.noteapp.ListOfAllNotesFragment"
+        android:name="com.ukadovlad21.noteapp.ui.fragments.ListOfAllNotesFragment"
         android:label="ListOfAllNotesFragment" >
         <action
             android:id="@+id/action_listOfAllNotesFragment_to_findNoteFragment"
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/findNoteFragment"
-        android:name="com.ukadovlad21.noteapp.FindNoteFragment"
+        android:name="com.ukadovlad21.noteapp.ui.fragments.FindNoteFragment"
         android:label="FindNoteFragment" >
         <action
             android:id="@+id/action_findNoteFragment_to_listOfAllNotesFragment"
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentCreateNote"
-        android:name="com.ukadovlad21.noteapp.CreateNoteFragment"
+        android:name="com.ukadovlad21.noteapp.ui.fragments.create_items.CreateNoteFragment"
         android:label="FragmentCreateNote" >
         <action
             android:id="@+id/action_fragmentCreateNote_to_listOfAllNotesFragment"
@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/createLinkFragment"
-        android:name="com.ukadovlad21.noteapp.CreateLinkFragment"
+        android:name="com.ukadovlad21.noteapp.ui.fragments.create_items.CreateLinkFragment"
         android:label="CreateLinkFragment" >
         <action
             android:id="@+id/action_createLinkFragment_to_listOfAllNotesFragment"

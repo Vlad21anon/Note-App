@@ -16,4 +16,6 @@
     <string name="sort_by_move">Sort by move</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="untitled">Untitled</string>
+    <string name="load_preview_image_here">Load preview image here</string>
+    <string name="paste_link_here_hint">paste link here</string>
 </resources>

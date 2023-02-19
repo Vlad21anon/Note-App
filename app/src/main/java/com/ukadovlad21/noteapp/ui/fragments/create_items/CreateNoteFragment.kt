@@ -1,10 +1,12 @@
-package com.ukadovlad21.noteapp
+package com.ukadovlad21.noteapp.ui.fragments.create_items
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.ukadovlad21.noteapp.R
+import com.ukadovlad21.noteapp.ui.toolbars.TitleToolbarHelper
 import com.ukadovlad21.noteapp.databinding.FragmentCreateNoteBinding
 
 class CreateNoteFragment : Fragment() {

@@ -1,4 +1,4 @@
-package com.ukadovlad21.noteapp
+package com.ukadovlad21.noteapp.ui.toolbars
 
 import androidx.navigation.findNavController
 import com.ukadovlad21.noteapp.databinding.ToolbarTitleBinding

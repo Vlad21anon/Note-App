@@ -1,4 +1,4 @@
-package com.ukadovlad21.noteapp
+package com.ukadovlad21.noteapp.ui.fragments.create_items
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
 import androidx.navigation.fragment.findNavController
+import com.ukadovlad21.noteapp.R
 import com.ukadovlad21.noteapp.databinding.DialogCreateNotesBinding
 
 class CreateNoteDialog : DialogFragment() {

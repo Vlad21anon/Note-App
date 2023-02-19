@@ -1,4 +1,4 @@
-package com.ukadovlad21.noteapp
+package com.ukadovlad21.noteapp.ui.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

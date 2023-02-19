@@ -1,4 +1,4 @@
-package com.ukadovlad21.noteapp
+package com.ukadovlad21.noteapp.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.ukadovlad21.noteapp.R
+import com.ukadovlad21.noteapp.ui.adapters.ViewPagerAdapter
 import com.ukadovlad21.noteapp.databinding.FragmentListOfAllNotesBinding
+import com.ukadovlad21.noteapp.ui.fragments.create_items.CreateNoteDialog
 
 class ListOfAllNotesFragment : Fragment() {
     private val binding: FragmentListOfAllNotesBinding by lazy {
