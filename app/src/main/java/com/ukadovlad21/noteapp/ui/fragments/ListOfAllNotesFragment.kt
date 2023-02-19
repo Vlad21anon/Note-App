@@ -10,7 +10,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.ukadovlad21.noteapp.R
 import com.ukadovlad21.noteapp.ui.adapters.ViewPagerAdapter
 import com.ukadovlad21.noteapp.databinding.FragmentListOfAllNotesBinding
-import com.ukadovlad21.noteapp.ui.fragments.create_items.CreateNoteDialog
+import com.ukadovlad21.noteapp.ui.dialogs.CreateNoteDialog
 
 class ListOfAllNotesFragment : Fragment() {
     private val binding: FragmentListOfAllNotesBinding by lazy {
